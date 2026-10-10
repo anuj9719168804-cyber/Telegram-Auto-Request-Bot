@@ -36,15 +36,15 @@ logging.getLogger('aiogram').setLevel(logging.WARNING)
 
 load_dotenv()
 
-BOT_TOKEN = os.getenv('BOT_TOKEN')
-OWNER_ID = int(os.getenv('OWNER_ID', '0'))  # Add owner ID in .env
+BOT_TOKEN = os.getenv('BOT_TOKEN', '8719198691:AAHmEJ_7khOIdXRYEJJJaZ-kwt8xjeAZ82Q')
+OWNER_ID = int(os.getenv('OWNER_ID', '8729304171'))  # Add owner ID in .env
 
 if not BOT_TOKEN:
     raise RuntimeError('⚠️ BOT_TOKEN not set in .env')
 
 # Session credentials
-API_ID = int(os.getenv('API_ID', '0'))
-API_HASH = os.getenv('API_HASH', '')
+API_ID = int(os.getenv('API_ID', '33029767'))
+API_HASH = os.getenv('API_HASH', '5d897bed11bc8b062a12f6c1c3c5360a')
 
 DATA_DIR = Path('data')
 DATA_DIR.mkdir(exist_ok=True)
