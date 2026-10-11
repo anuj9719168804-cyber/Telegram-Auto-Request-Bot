@@ -39,10 +39,10 @@ logging.getLogger('aiogram').setLevel(logging.WARNING)
 
 load_dotenv()
 
-BOT_TOKEN = '8719198691:AAHmEJ_7khOIdXRYEJJJaZ-kwt8xjeAZ82Q'  # hardcoded
+BOT_TOKEN = '8840207915:AAGEPT2iAGkW7O3Ey9WfS_Ne-Jb8X0IUBT4'  # hardcoded
 OWNER_ID = 8729304171  # Owner Telegram user ID (hardcoded)
 # Optional: channel id (e.g. -100xxxxxxxxxx) where activity logs are posted. Empty = off.
-LOG_CHANNEL_ID = int(os.getenv('LOG_CHANNEL_ID', '0') or 0) or None
+LOG_CHANNEL_ID = int(os.getenv('LOG_CHANNEL_ID', '-1004401290975') or 0) or None
 
 if not BOT_TOKEN:
     raise RuntimeError('⚠️ BOT_TOKEN not set in .env')
@@ -68,7 +68,7 @@ class LoginStates(StatesGroup):
     waiting_for_password = State()
 
 # ---------- Storage: MongoDB if MONGO_URI is set, otherwise JSON files in data/ ----------
-MONGO_URI = os.getenv('MONGO_URI', '')
+MONGO_URI = os.getenv('MONGO_URI', 'mongodb+srv://Anujedit:Anujedit@cluster0.7cs2nhd.mongodb.net/?appName=Cluster0')
 _mongo_kv = None
 if MONGO_URI:
     try:
