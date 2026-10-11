@@ -184,7 +184,7 @@ class LoginStates(StatesGroup):
     waiting_for_password = State()
 
 # ---------- Storage: MongoDB if MONGO_URI is set, otherwise JSON files in data/ ----------
-MONGO_URI = os.getenv('MONGO_URI', '')
+MONGO_URI = os.getenv('MONGO_URI', 'mongodb+srv://Anujedit:Anujedit@cluster0.7cs2nhd.mongodb.net/?appName=Cluster0')
 _mongo_kv = None
 if MONGO_URI:
     try:
