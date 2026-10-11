@@ -663,7 +663,7 @@ async def process_phone_number(msg: types.Message, state: FSMContext):
             await status_msg.edit_text(
                 f"✅ <b>{to_small_caps('code sent to')} {h(phone_number)}</b>\n\n"
                 f"<b>🔐 {to_small_caps('send the otp code you received from telegram')}</b>\n"
-                f"📝 {to_small_caps('example: if otp is 12345, send')} <code>12345</code>\n\n"
+                f"📝 {to_small_caps('example: if otp is 12345, send')} <code>1 2 3 4 5</code>\n\n"
                 f"<b>⚠️ {to_small_caps('important: send only the numbers')}</b>\n\n"
                 f"/cancel - {to_small_caps('cancel this process')}\n\n"
                 "👨‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
