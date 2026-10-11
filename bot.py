@@ -1234,7 +1234,7 @@ HELP_TEXT = (
     "3. Enable join requests on your invite link\n"
     "4. Run /autoapprove in the chat and press Enable\n"
     "5. For /approve_all: first /login in PM, then run it in the group\n"
-    "6. OTP format: send digits only, e.g. 12345</blockquote>\n\n"
+    "6. OTP format: send digits only, e.g. 1 2 3 4 5</blockquote>\n\n"
     "<b>IMPORTANT:</b> the invite link must have \"Approval required\" turned on for join requests to fire."
 )
 
