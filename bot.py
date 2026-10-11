@@ -547,7 +547,7 @@ async def cmd_login(msg: types.Message, state: FSMContext):
         "\"You can either:\"\n"
         "\"1. Click the '📱 Share Phone Number' button below\"\n"
         "\"2. Or type your phone number in international format (e.g., +1234567890)\"\n\n"
-        "👨🏻‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
+        "👨‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
         reply_markup=phone_keyboard,
         parse_mode=ParseMode.HTML
     )
@@ -627,7 +627,7 @@ async def process_phone_number(msg: types.Message, state: FSMContext):
                 f"📝 {to_small_caps('example: if otp is 12345, send')} <code>12345</code>\n\n"
                 f"<b>⚠️ {to_small_caps('important: send only the numbers')}</b>\n\n"
                 f"/cancel - {to_small_caps('cancel this process')}\n\n"
-                "👨🏻‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
+                "👨‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
                 parse_mode=ParseMode.HTML
             )
         except TelegramBadRequest:
@@ -635,10 +635,10 @@ async def process_phone_number(msg: types.Message, state: FSMContext):
                 uid,
                 f"✅ <b>{to_small_caps('code sent to')} {h(phone_number)}</b>\n\n"
                 f"<b>🔐 {to_small_caps('send the otp code you received from telegram')}</b>\n"
-                f"📝 {to_small_caps('example: if otp is 12345, send')} <code>12345</code>\n\n"
+                f"📝 {to_small_caps('example: if otp is 12345, send')} <code>1 2 3 4 5</code>\n\n"
                 f"<b>⚠️ {to_small_caps('important: send only the numbers')}</b>\n\n"
                 f"/cancel - {to_small_caps('cancel this process')}\n\n"
-                "👨🏻‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
+                "👨‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
                 parse_mode=ParseMode.HTML
             )
         
@@ -747,7 +747,7 @@ async def process_verification_code(msg: types.Message, state: FSMContext):
                 f"👤 Name: {h(user.first_name or '')} {h(user.last_name or '')}\n"
                 f"🆔 Username: @{h(user.username or 'None')}\n\n"
                 "You can now use /approve commands.\n\n"
-                "👨🏻‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
+                "👨‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
                 parse_mode=ParseMode.HTML
             )
             
@@ -758,7 +758,7 @@ async def process_verification_code(msg: types.Message, state: FSMContext):
                 f"🔒 <b>{to_small_caps('your account has 2fa enabled. send your password')}</b>\n\n"
                 f"⚠️ <b>{to_small_caps('important: your password is case-sensitive')}</b>\n\n"
                 f"/cancel - {to_small_caps('cancel the process')}\n\n"
-                "👨🏻‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
+                "👨‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
                 parse_mode=ParseMode.HTML
             )
             
@@ -771,7 +771,7 @@ async def process_verification_code(msg: types.Message, state: FSMContext):
                     f"🔄 {to_small_caps('remaining attempts')}: {left}\n\n"
                     f"📝 {to_small_caps('example')}: 12345\n\n"
                     f"/cancel - {to_small_caps('cancel this process')}\n\n"
-                    "👨🏻‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
+                    "👨‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
                     parse_mode=ParseMode.HTML
                 )
             else:
@@ -852,7 +852,7 @@ async def process_2fa_password(msg: types.Message, state: FSMContext):
             f"🆔 Username: @{h(user.username or 'None')}\n"
             f"🔒 2FA: Enabled\n\n"
             "You can now use /approve commands.\n\n"
-            "👨🏻‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
+            "👨‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
             parse_mode=ParseMode.HTML
         )
         
@@ -865,7 +865,7 @@ async def process_2fa_password(msg: types.Message, state: FSMContext):
                 f"❌ <b>{to_small_caps('invalid password! please try again.')}</b>\n\n"
                 f"🔄 {to_small_caps('remaining attempts')}: {left}\n\n"
                 f"{to_small_caps('if you forgot your password, /cancel and restart with /login')}\n\n"
-                "👨🏻‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
+                "👨‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
                 parse_mode=ParseMode.HTML
             )
         else:
@@ -907,7 +907,7 @@ async def cmd_logout(msg: types.Message, state: FSMContext):
         save_state()
         await msg.answer(
             "🚪 Logged out successfully!\n\n"
-            "👨🏻‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
+            "👨‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
             parse_mode=ParseMode.HTML
         )
     else:
@@ -963,7 +963,7 @@ async def cmd_export(msg: types.Message):
         
         await msg.answer(
             "✅ Data export completed!\n\n"
-            "👨🏻‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
+            "👨‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
             parse_mode=ParseMode.HTML
         )
     
@@ -1067,7 +1067,7 @@ async def handle_approve_all(msg: types.Message, chat_id: int, user_id: int):
         chat_name = await get_chat_name(chat_id)
         await status_msg.edit_text(
             f"{'⛔ Stopped' if stopped else '✅ Approved'} {approved_count} members in {h(chat_name)}\n\n"
-            f"👨🏻‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>"
+            f"👨‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>"
         )
     except Exception as e:
         await status_msg.edit_text(f"❌ Error accessing chat: {h(str(e))}")
@@ -1096,7 +1096,7 @@ async def handle_approve_count(msg: types.Message, chat_id: int, count: int, use
         chat_name = await get_chat_name(chat_id)
         await status_msg.edit_text(
             f"✅ Approved {approved_count}/{count} members in {h(chat_name)}\n\n"
-            f"👨🏻‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>"
+            f"👨‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>"
         )
     except Exception as e:
         await status_msg.edit_text(f"❌ Error accessing chat: {h(str(e))}")
@@ -1129,7 +1129,7 @@ async def handle_approve_callbacks(cb: CallbackQuery, state: FSMContext):
             "\"You can either:\"\n"
             "\"1. Click the '📱 Share Phone Number' button below\"\n"
             "\"2. Or type your phone number in international format (e.g., +1234567890)\"\n\n"
-            "👨🏻‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
+            "👨‍💻 Dev : <a href='https://t.me/anujedits76'>ᴀɴᴜᴊ ᴋᴜᴍᴀʀ</a>",
             reply_markup=phone_keyboard
         )
         
@@ -5207,7 +5207,7 @@ async def start_health_server():
 
 async def main():
     print('🤖 AK AUTO REQUEST BOT is started!')
-    print('👨🏻‍💻 Dev : Anuj Kumar')
+    print('👨‍💻 Dev : Anuj Kumar')
     
     await get_bot_username()
     
